@@ -18,6 +18,8 @@
 		F0A296A424CC9A7900376BDD /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F0A296A224CC9A7900376BDD /* Main.storyboard */; };
 		F0A296A624CC9A7B00376BDD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F0A296A524CC9A7B00376BDD /* Assets.xcassets */; };
 		F0A296A924CC9A7B00376BDD /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F0A296A724CC9A7B00376BDD /* LaunchScreen.storyboard */; };
+		F0BFA2CE24D025C20052C6A4 /* Spot.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0BFA2CD24D025C20052C6A4 /* Spot.swift */; };
+		F0BFA2D024D02D760052C6A4 /* UIViewController+alert.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0BFA2CF24D02D760052C6A4 /* UIViewController+alert.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -36,6 +38,8 @@
 		F0A296A524CC9A7B00376BDD /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		F0A296A824CC9A7B00376BDD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		F0A296AA24CC9A7B00376BDD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F0BFA2CD24D025C20052C6A4 /* Spot.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Spot.swift; sourceTree = "<group>"; };
+		F0BFA2CF24D02D760052C6A4 /* UIViewController+alert.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIViewController+alert.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -90,10 +94,12 @@
 			children = (
 				F0A2969C24CC9A7900376BDD /* AppDelegate.swift */,
 				F0A2969E24CC9A7900376BDD /* SceneDelegate.swift */,
+				F0BFA2CD24D025C20052C6A4 /* Spot.swift */,
 				F0A296A024CC9A7900376BDD /* LoginViewController.swift */,
 				F09647D224CEDCB200232A69 /* SpotListViewController.swift */,
 				F09647D024CED9D600232A69 /* SpotTableViewCell.swift */,
 				F09647D424CEDD8100232A69 /* SpotDetailViewController.swift */,
+				F0BFA2CF24D02D760052C6A4 /* UIViewController+alert.swift */,
 				F0A296A224CC9A7900376BDD /* Main.storyboard */,
 				F0A296A524CC9A7B00376BDD /* Assets.xcassets */,
 				F0A296A724CC9A7B00376BDD /* LaunchScreen.storyboard */,
@@ -242,7 +248,9 @@
 				F09647D524CEDD8100232A69 /* SpotDetailViewController.swift in Sources */,
 				F0A2969D24CC9A7900376BDD /* AppDelegate.swift in Sources */,
 				F09647D124CED9D600232A69 /* SpotTableViewCell.swift in Sources */,
+				F0BFA2CE24D025C20052C6A4 /* Spot.swift in Sources */,
 				F0A2969F24CC9A7900376BDD /* SceneDelegate.swift in Sources */,
+				F0BFA2D024D02D760052C6A4 /* UIViewController+alert.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
