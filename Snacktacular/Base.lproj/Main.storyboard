@@ -193,17 +193,24 @@
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                         <textInputTraits key="textInputTraits"/>
                                     </textField>
+                                    <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" mapType="standard" rotateEnabled="NO" showsUserLocation="YES" translatesAutoresizingMaskIntoConstraints="NO" id="KYc-y6-nZ8">
+                                        <rect key="frame" x="0.0" y="62" width="375" height="240"/>
+                                    </mapView>
                                 </subviews>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                                 <constraints>
                                     <constraint firstItem="H2e-h0-6jl" firstAttribute="top" secondItem="TlA-Fh-4jU" secondAttribute="top" constant="8" id="2lS-2M-sbv"/>
+                                    <constraint firstAttribute="trailing" secondItem="KYc-y6-nZ8" secondAttribute="trailing" id="6qZ-bz-Jyv"/>
+                                    <constraint firstItem="KYc-y6-nZ8" firstAttribute="top" secondItem="Mcp-dq-C64" secondAttribute="bottom" constant="2" id="8Bo-Wp-ldp"/>
                                     <constraint firstItem="H2e-h0-6jl" firstAttribute="leading" secondItem="TlA-Fh-4jU" secondAttribute="leading" constant="8" id="EQt-xW-HlL"/>
                                     <constraint firstAttribute="trailing" secondItem="XqL-ry-iYS" secondAttribute="trailing" id="Iz4-yu-ZQc"/>
+                                    <constraint firstItem="KYc-y6-nZ8" firstAttribute="leading" secondItem="TlA-Fh-4jU" secondAttribute="leading" id="Ntj-jv-DO7"/>
                                     <constraint firstAttribute="trailing" secondItem="Mcp-dq-C64" secondAttribute="trailing" constant="8" id="feZ-MD-9RQ"/>
                                     <constraint firstItem="Mcp-dq-C64" firstAttribute="top" secondItem="H2e-h0-6jl" secondAttribute="bottom" constant="2" id="gJK-za-uAE"/>
                                     <constraint firstItem="XqL-ry-iYS" firstAttribute="top" secondItem="Mcp-dq-C64" secondAttribute="bottom" constant="242" id="i3J-0H-txX"/>
                                     <constraint firstItem="XqL-ry-iYS" firstAttribute="leading" secondItem="TlA-Fh-4jU" secondAttribute="leading" id="kBq-9q-hhU"/>
                                     <constraint firstAttribute="trailing" secondItem="H2e-h0-6jl" secondAttribute="trailing" constant="8" id="lhf-d0-XrC"/>
+                                    <constraint firstItem="XqL-ry-iYS" firstAttribute="top" secondItem="KYc-y6-nZ8" secondAttribute="bottom" id="tLR-Y8-u1L"/>
                                     <constraint firstItem="Mcp-dq-C64" firstAttribute="leading" secondItem="TlA-Fh-4jU" secondAttribute="leading" constant="8" id="vS8-JG-66B"/>
                                 </constraints>
                             </view>
@@ -272,7 +279,11 @@
                     </view>
                     <toolbarItems>
                         <barButtonItem style="plain" systemItem="flexibleSpace" id="qfu-eM-ZXb"/>
-                        <barButtonItem title="Lookup Place" id="7J2-0S-QMr"/>
+                        <barButtonItem title="Lookup Place" id="7J2-0S-QMr">
+                            <connections>
+                                <action selector="findLocationPressed:" destination="5np-C6-jZx" id="dad-mZ-aRF"/>
+                            </connections>
+                        </barButtonItem>
                     </toolbarItems>
                     <navigationItem key="navigationItem" id="5Ro-Qs-wRG">
                         <barButtonItem key="leftBarButtonItem" systemItem="cancel" id="4Z6-ya-Ejh">
@@ -290,6 +301,7 @@
                     <connections>
                         <outlet property="addressTextField" destination="Mcp-dq-C64" id="BGT-IJ-tKD"/>
                         <outlet property="collectionView" destination="XqL-ry-iYS" id="Qnw-gR-4Jj"/>
+                        <outlet property="mapView" destination="KYc-y6-nZ8" id="38e-Rj-9CI"/>
                         <outlet property="nameTextField" destination="H2e-h0-6jl" id="VIc-bh-uxf"/>
                         <outlet property="ratingLabel" destination="G8r-FX-5sI" id="6FP-iA-fgY"/>
                     </connections>
