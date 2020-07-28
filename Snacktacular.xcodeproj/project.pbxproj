@@ -8,7 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		3A8D428A5EDFA07168CE081C /* Pods_Snacktacular.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 92DAE7199CE7BF65B7AE0A21 /* Pods_Snacktacular.framework */; };
-		F09647CD24CDC15700232A69 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = F09647CC24CDC15700232A69 /* GoogleService-Info.plist */; };
+		F042280024D06ED700EC7833 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = F04227FF24D06ED700EC7833 /* GoogleService-Info.plist */; };
+		F042280224D06F1A00EC7833 /* Spots.swift in Sources */ = {isa = PBXBuildFile; fileRef = F042280124D06F1A00EC7833 /* Spots.swift */; };
 		F09647D124CED9D600232A69 /* SpotTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F09647D024CED9D600232A69 /* SpotTableViewCell.swift */; };
 		F09647D324CEDCB200232A69 /* SpotListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F09647D224CEDCB200232A69 /* SpotListViewController.swift */; };
 		F09647D524CEDD8100232A69 /* SpotDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F09647D424CEDD8100232A69 /* SpotDetailViewController.swift */; };
@@ -26,7 +27,8 @@
 		164D3855BD95E1DF3A841DBB /* Pods-Snacktacular.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Snacktacular.debug.xcconfig"; path = "Target Support Files/Pods-Snacktacular/Pods-Snacktacular.debug.xcconfig"; sourceTree = "<group>"; };
 		92DAE7199CE7BF65B7AE0A21 /* Pods_Snacktacular.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Snacktacular.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		E63C67B087433911560C27F2 /* Pods-Snacktacular.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Snacktacular.release.xcconfig"; path = "Target Support Files/Pods-Snacktacular/Pods-Snacktacular.release.xcconfig"; sourceTree = "<group>"; };
-		F09647CC24CDC15700232A69 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		F04227FF24D06ED700EC7833 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		F042280124D06F1A00EC7833 /* Spots.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Spots.swift; sourceTree = "<group>"; };
 		F09647D024CED9D600232A69 /* SpotTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpotTableViewCell.swift; sourceTree = "<group>"; };
 		F09647D224CEDCB200232A69 /* SpotListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpotListViewController.swift; sourceTree = "<group>"; };
 		F09647D424CEDD8100232A69 /* SpotDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpotDetailViewController.swift; sourceTree = "<group>"; };
@@ -95,6 +97,7 @@
 				F0A2969C24CC9A7900376BDD /* AppDelegate.swift */,
 				F0A2969E24CC9A7900376BDD /* SceneDelegate.swift */,
 				F0BFA2CD24D025C20052C6A4 /* Spot.swift */,
+				F042280124D06F1A00EC7833 /* Spots.swift */,
 				F0A296A024CC9A7900376BDD /* LoginViewController.swift */,
 				F09647D224CEDCB200232A69 /* SpotListViewController.swift */,
 				F09647D024CED9D600232A69 /* SpotTableViewCell.swift */,
@@ -104,7 +107,7 @@
 				F0A296A524CC9A7B00376BDD /* Assets.xcassets */,
 				F0A296A724CC9A7B00376BDD /* LaunchScreen.storyboard */,
 				F0A296AA24CC9A7B00376BDD /* Info.plist */,
-				F09647CC24CDC15700232A69 /* GoogleService-Info.plist */,
+				F04227FF24D06ED700EC7833 /* GoogleService-Info.plist */,
 			);
 			path = Snacktacular;
 			sourceTree = "<group>";
@@ -171,7 +174,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				F0A296A924CC9A7B00376BDD /* LaunchScreen.storyboard in Resources */,
-				F09647CD24CDC15700232A69 /* GoogleService-Info.plist in Resources */,
+				F042280024D06ED700EC7833 /* GoogleService-Info.plist in Resources */,
 				F0A296A624CC9A7B00376BDD /* Assets.xcassets in Resources */,
 				F0A296A424CC9A7900376BDD /* Main.storyboard in Resources */,
 			);
@@ -247,6 +250,7 @@
 				F09647D324CEDCB200232A69 /* SpotListViewController.swift in Sources */,
 				F09647D524CEDD8100232A69 /* SpotDetailViewController.swift in Sources */,
 				F0A2969D24CC9A7900376BDD /* AppDelegate.swift in Sources */,
+				F042280224D06F1A00EC7833 /* Spots.swift in Sources */,
 				F09647D124CED9D600232A69 /* SpotTableViewCell.swift in Sources */,
 				F0BFA2CE24D025C20052C6A4 /* Spot.swift in Sources */,
 				F0A2969F24CC9A7900376BDD /* SceneDelegate.swift in Sources */,
