@@ -30,6 +30,7 @@ class SpotListViewController: UIViewController {
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
         spots.loadData {
+            self.sortBasedOnSegmentPressed()
             self.tableView.reloadData()
         }
     }
@@ -57,6 +58,25 @@ class SpotListViewController: UIViewController {
             
             destination.spot = spots.spotArray[selectedIndexPath.row]
         }
+    }
+    
+    func sortBasedOnSegmentPressed() {
+        switch sortSegmentedControl.selectedSegmentIndex {
+        case 0:
+            spots.spotArray.sort(by: {$0.name < $1.name})
+        case 1:
+            print("TODO")
+        case 2:
+            print("TODO")
+        default:
+            print("ERROR: You shouldn't have gotten here. Check out the segmented control for an error!")
+        }
+        
+        tableView.reloadData()
+    }
+    
+    @IBAction func sortSegmentPressed(_ sender: UISegmentedControl) {
+        sortBasedOnSegmentPressed()
     }
 }
 
